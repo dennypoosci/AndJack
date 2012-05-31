@@ -25,8 +25,9 @@
         <item>9</item>
         <item>10</item>
         <item>25</item>
-        <item>50</item>        
+        <item>50</item> 
         <item>100</item>
+        <item>200</item>  
         <item>500</item>        
         <item>999</item>
    </string-array>
