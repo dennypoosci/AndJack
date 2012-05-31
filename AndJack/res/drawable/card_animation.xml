@@ -1,0 +1,9 @@
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+  <item android:drawable="@drawable/backu" android:duration="300" />
+  <item android:drawable="@drawable/back45" android:duration="300" />
+  <item android:drawable="@drawable/backl" android:duration="300" />
+  <item android:drawable="@drawable/back135" android:duration="300" />
+  <item android:drawable="@drawable/backu" android:duration="300" />
+  </animation-list>

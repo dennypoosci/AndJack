@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout
+android:id="@+id/widget0"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+<ImageView
+android:id="@+id/image1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="126px"
+>
+</ImageView>
+<TextView
+android:text="Frame1"
+></TextView>
+<ImageView
+android:id="@+id/image2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="146px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="166px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image4"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="186px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image5"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="206px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image6"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="226px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image7"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="246px"
+>
+</ImageView>
+
+<ImageView
+android:id="@+id/image11"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="126px"
+>
+</ImageView>
+<TextView
+android:text="Frame2"
+></TextView>
+<ImageView
+android:id="@+id/image12"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="146px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image13"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="166px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image14"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="186px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image15"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="206px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image16"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="226px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image17"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="246px"
+>
+</ImageView>
+
+<ImageView
+android:id="@+id/image21"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="126px"
+>
+</ImageView>
+<TextView
+android:text="Frame3"
+></TextView>
+<ImageView
+android:id="@+id/image22"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="146px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image23"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="166px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image24"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="186px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image25"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="206px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image26"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="226px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image27"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22px"
+android:layout_y="246px"
+>
+</ImageView>
+<ImageView
+android:id="@+id/myarr"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="122px"
+android:layout_y="246px"
+>
+</ImageView>
+
+<TextView
+android:id="@+id/nowthishand"
+android:layout_width="100px"
+android:layout_height="22px"
+android:text="NowThis Hand"
+android:layout_x="117px"
+android:layout_y="85px"
+>
+</TextView>
+<TextView
+android:id="@+id/thishand"
+android:layout_width="100px"
+android:layout_height="21px"
+android:text="This Hand"
+android:layout_x="215px"
+android:layout_y="86px"
+>
+</TextView>
+
+<RelativeLayout android:id="@+id/relativeLayout2" 
+android:layout_width="fill_parent" 
+android:layout_height="81px"
+android:background="#ff6666ff"
+>
+     <LinearLayout android:id="@+id/widget412" 
+    android:layout_height="25px" 
+    android:layout_width="fill_parent" 
+    style="@android:style/ButtonBar" 
+    android:orientation="horizontal" 
+    android:layout_alignParentTop="true"
+
+    >
+ 
+<TextView
+android:id="@+id/moneyfield"
+android:layout_width="wrap_content" android:layout_height="fill_parent"
+android:text="abc"
+android:layout_weight="1"
+>
+</TextView>
+<TextView
+android:id="@+id/moneylabel"
+android:layout_width="wrap_content" android:layout_height="fill_parent"
+android:layout_weight="1"
+android:background="#ff6666ff"
+
+android:text="def"
+>
+</TextView>
+<TextView
+android:layout_weight="1"
+android:id="@+id/players"
+android:layout_width="wrap_content" android:layout_height="fill_parent"
+android:text="hij"
+>
+</TextView>
+</LinearLayout>
+     <LinearLayout android:id="@+id/widget413" 
+    android:layout_height="25px" 
+    android:layout_width="fill_parent" 
+    style="@android:style/ButtonBar" 
+    android:orientation="horizontal" 
+    android:layout_below="@+id/widget412"
+    >
+
+<TextView
+android:id="@+id/splits"
+android:layout_weight="1"
+android:layout_width="wrap_content" android:layout_height="fill_parent"
+
+
+
+android:text="klm"
+>
+</TextView>
+<TextView
+android:id="@+id/dealershand"
+android:layout_width="wrap_content" android:layout_height="fill_parent"
+android:layout_weight="1"
+android:textColor="@color/cyan"
+android:text="mno"
+>
+</TextView>
+<TextView
+android:id="@+id/dealers"
+android:layout_width="wrap_content" android:layout_height="fill_parent"
+android:layout_weight="1"
+android:textColor="@color/cyan"
+
+android:text="pqr"
+>
+</TextView>
+</LinearLayout>
+
+     <LinearLayout android:id="@+id/widget414" 
+    android:layout_height="25px" 
+    android:layout_width="fill_parent" 
+    style="@android:style/ButtonBar" 
+    android:orientation="horizontal" 
+    android:layout_alignParentBottom="true"
+    >
+ 
+<EditText
+android:id="@+id/Bet"
+android:layout_width="wrap_content" android:layout_height="fill_parent"
+        android:layout_below="@id/splits"
+android:background="@color/green"
+android:layout_weight="1"
+android:text="100"
+android:textSize="18sp"
+
+>
+
+</EditText>
+<TextView
+android:id="@+id/splitfield"
+android:layout_width="wrap_content" android:layout_height="fill_parent"
+android:layout_weight="1"
+android:text="stu"
+>
+</TextView>
+<TextView
+android:id="@+id/denfield"
+android:layout_width="wrap_content" android:layout_height="fill_parent"
+android:layout_weight="1"
+android:text="xyz"
+>
+</TextView>
+</LinearLayout>
+</RelativeLayout>
+<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_x="0dip" android:layout_y="0dip">
+    <LinearLayout style="@android:style/ButtonBar" android:id="@+id/widget41" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/deal" android:layout_height="fill_parent" android:text="Deal"></Button>
+        <Button android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/hit" android:layout_height="fill_parent" android:text="Hit"></Button>
+        <Button android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/stand" android:layout_height="fill_parent" android:text="Stand"></Button>
+        <Button android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/split" android:layout_height="fill_parent" android:text="Split"></Button>
+        <Button android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/dble" android:layout_height="fill_parent" android:text="Double"></Button>
+    </LinearLayout>
+</RelativeLayout>
+</AbsoluteLayout>
+

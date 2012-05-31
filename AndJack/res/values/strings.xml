@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">AndJack</string>
+    <string name="HitMe"><u>H</u>itMe</string>
+    <string name="Deal"><u>D</u>eal</string>
+    <string name="Stand"><u>S</u>tand</string>
+    <string name="Double">Dou<u>b</u>le</string>
+    <string name="Split">S<u>p</u>lit</string>
+    <string name="DealersHand">Dealers Hand</string>
+    <string name="NowThisHand">Now This Hand</string>
+    <string name="ThisHand">This Hand</string>
+    <string name="desc">Image View</string>
+    
+       
+    
+    <string-array name="denint">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>        
+        <item>100</item>
+        <item>500</item>        
+        <item>999</item>
+   </string-array>
+</resources>

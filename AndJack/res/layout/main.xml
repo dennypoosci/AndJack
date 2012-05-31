@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget0"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+<ImageView
+android:id="@+id/image1"
+android:contentDescription="@string/desc"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22dp"
+android:layout_y="86dp"
+>
+</ImageView>
+<ImageView
+android:contentDescription="@string/desc"
+android:id="@+id/image2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22dp"
+android:layout_y="106dp"
+>
+</ImageView>
+<ImageView
+android:contentDescription="@string/desc"
+android:id="@+id/image3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22dp"
+android:layout_y="126dp"
+>
+</ImageView>
+<ImageView
+android:contentDescription="@string/desc"
+android:id="@+id/image4"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22dp"
+android:layout_y="146dp"
+>
+</ImageView>
+<ImageView
+android:contentDescription="@string/desc"
+android:id="@+id/image5"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22dp"
+android:layout_y="166dp"
+>
+</ImageView>
+<ImageView
+android:contentDescription="@string/desc"
+android:id="@+id/image6"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22dp"
+android:layout_y="186dp"
+>
+</ImageView>
+<ImageView
+android:contentDescription="@string/desc"
+android:id="@+id/image7"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="22dp"
+android:layout_y="206dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image11"
+android:contentDescription="@string/desc"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="122dp"
+android:layout_y="86dp"
+>
+</ImageView>
+<ImageView
+android:contentDescription="@string/desc"
+android:id="@+id/image12"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="122dp"
+android:layout_y="106dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image13"
+android:layout_width="wrap_content"
+android:contentDescription="@string/desc"
+android:layout_height="wrap_content"
+android:layout_x="122dp"
+android:layout_y="126dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image14"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="122dp"
+android:contentDescription="@string/desc"
+android:layout_y="146dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image15"
+android:layout_width="wrap_content"
+android:contentDescription="@string/desc"
+android:layout_height="wrap_content"
+android:layout_x="122dp"
+android:layout_y="166dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image16"
+android:layout_width="wrap_content"
+android:contentDescription="@string/desc"
+android:layout_height="wrap_content"
+android:layout_x="122dp"
+android:layout_y="186dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image17"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="122dp"
+android:contentDescription="@string/desc"
+android:layout_y="206dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image21"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:contentDescription="@string/desc"
+android:layout_x="222dp"
+android:layout_y="86dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image22"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:contentDescription="@string/desc"
+android:layout_x="222dp"
+android:layout_y="106dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image23"
+android:layout_width="wrap_content"
+android:contentDescription="@string/desc"
+android:layout_height="wrap_content"
+android:layout_x="222dp"
+android:layout_y="126dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image24"
+android:contentDescription="@string/desc"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="222dp"
+android:layout_y="146dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image25"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:contentDescription="@string/desc"
+android:layout_x="222dp"
+android:layout_y="166dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image26"
+android:layout_width="wrap_content"
+android:contentDescription="@string/desc"
+android:layout_height="wrap_content"
+android:layout_x="222dp"
+android:layout_y="186dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/image27"
+android:layout_width="wrap_content"
+android:contentDescription="@string/desc"
+android:layout_height="wrap_content"
+android:layout_x="222dp"
+android:layout_y="206dp"
+>
+</ImageView>
+<ImageView
+android:id="@+id/myarr"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:contentDescription="@string/desc"
+android:layout_x="322dp"
+android:layout_y="246dp"
+>
+</ImageView>
+
+<RelativeLayout android:id="@+id/relativeLayout2" 
+android:layout_width="fill_parent" 
+android:layout_height="59dp"
+android:background="#ff6666ff"
+>
+
+ 
+     <LinearLayout 
+    android:id="@+id/widget413" 
+    android:layout_height="23dp" 
+    android:padding="2dip"
+    android:layout_width="fill_parent" 
+    style="@android:style/ButtonBar" 
+    android:orientation="horizontal" 
+    android:layout_below="@+id/widget412"
+    >
+
+
+<TextView
+android:id="@+id/moneyfield"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:layout_weight="1"
+android:gravity="center"
+android:textColor="@color/cyan"
+android:background="@color/red"
+>
+</TextView>
+<TextView
+android:id="@+id/dealershand"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:layout_weight="1"
+android:textColor="@color/cyan"
+android:gravity="center" android:background="@color/solid_blue"
+>
+</TextView>
+
+<TextView
+android:id="@+id/splitfield"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:layout_weight="1"
+android:gravity="center"
+android:textColor="@drawable/screen_background_black"
+android:background="@drawable/yellow"
+>
+</TextView>
+<Spinner
+android:id="@+id/Bet"
+android:layout_width="fill_parent" android:layout_height="25dp"
+android:padding="2dip"
+android:entries="@array/denint"
+android:layout_weight="1"
+android:gravity="center" 
+>
+
+</Spinner>
+</LinearLayout>
+     <LinearLayout android:id="@+id/widget414" 
+    android:layout_height="16px" 
+    android:padding="0dip"
+    android:layout_width="fill_parent" 
+    style="@android:style/ButtonBar" 
+    android:orientation="horizontal" 
+    android:layout_below="@+id/widget413"
+    >
+  <TextView
+android:id="@+id/dealers"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:layout_weight="1"
+android:textColor="@color/cyan"
+android:gravity="center" android:background="@color/red"
+>
+</TextView>
+ <TextView
+android:layout_weight="1"
+android:id="@+id/players"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:gravity="center"
+android:textColor="@color/cyan" android:background="@color/solid_blue"
+>
+</TextView>
+
+
+<TextView
+android:id="@+id/splits"
+android:layout_weight="1"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:textColor="@drawable/screen_background_black"
+android:gravity="center" android:background="@drawable/yellow"
+>
+</TextView>
+</LinearLayout>
+     <LinearLayout android:id="@+id/widget415" 
+    android:layout_height="20px" 
+    android:padding="2dip"
+    android:layout_width="fill_parent" 
+    style="@android:style/ButtonBar" 
+    android:orientation="horizontal" 
+    android:layout_alignParentBottom="true"
+    >
+ 
+ <TextView
+android:id="@+id/nohand"
+android:layout_weight="1"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:gravity="center"
+android:text="@string/DealersHand"
+android:textColor="@color/cyan" android:background="@color/red"
+>
+</TextView> <TextView
+android:id="@+id/nowthishand"
+android:layout_weight="1"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:text="@string/NowThisHand"
+android:gravity="center"
+android:textColor="@color/cyan" android:background="@color/solid_blue"
+>
+</TextView>
+<TextView
+android:id="@+id/thishand"
+android:layout_weight="1"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+android:text="@string/ThisHand"
+android:gravity="center"
+android:textColor="@drawable/screen_background_black"
+android:background="@drawable/yellow"
+>
+</TextView>
+</LinearLayout>
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<LinearLayout android:layout_height="wrap_content" style="@android:style/ButtonBar" android:id="@+id/widget41" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_x="2dip" android:layout_y="313dip" android:layout_alignParentBottom="true">
+    <Button android:text="@string/Deal" android:layout_weight="1" android:id="@+id/deal" android:layout_height="fill_parent" android:layout_width="wrap_content"></Button>
+    <Button android:text="@string/HitMe" android:layout_weight="1" android:id="@+id/hit" android:layout_height="fill_parent" android:layout_width="wrap_content"></Button>
+    <Button android:text="@string/Stand" android:layout_weight="1" android:id="@+id/stand" android:layout_height="fill_parent" android:layout_width="wrap_content"></Button>
+    <Button android:text="@string/Split" android:layout_weight="1" android:id="@+id/split" android:layout_height="fill_parent" android:layout_width="wrap_content"></Button>
+    <Button android:text="@string/Double" android:layout_weight="1" android:id="@+id/dble" android:layout_height="fill_parent" android:layout_width="wrap_content"></Button>
+</LinearLayout>
+</RelativeLayout>
+</AbsoluteLayout>
