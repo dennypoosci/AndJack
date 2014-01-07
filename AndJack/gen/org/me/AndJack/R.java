@@ -12,7 +12,12 @@ public final class R {
         public static final int denjackanim=0x7f040000;
     }
     public static final class array {
+        public static final int a3tab=0x7f070003;
+        public static final int atab=0x7f070002;
         public static final int denint=0x7f070000;
+        public static final int n3tab=0x7f070005;
+        public static final int ntab=0x7f070004;
+        public static final int stab=0x7f070001;
     }
     public static final class attr {
     }
@@ -102,13 +107,16 @@ public final class R {
     }
     public static final class id {
         public static final int Bet=0x7f08001d;
-        public static final int dble=0x7f08002b;
-        public static final int deal=0x7f080027;
+        public static final int Text1=0x7f080041;
+        public static final int button1=0x7f080048;
+        public static final int dble=0x7f08002d;
+        public static final int deal=0x7f080029;
         public static final int dealers=0x7f08001f;
         public static final int dealershand=0x7f08001b;
-        public static final int denfield=0x7f08002d;
-        public static final int editText1=0x7f080037;
-        public static final int hit=0x7f080028;
+        public static final int denfield=0x7f08002f;
+        public static final int editText1=0x7f08003a;
+        public static final int hintfield=0x7f080028;
+        public static final int hit=0x7f08002a;
         public static final int image1=0x7f080001;
         public static final int image11=0x7f080008;
         public static final int image12=0x7f080009;
@@ -130,39 +138,47 @@ public final class R {
         public static final int image5=0x7f080005;
         public static final int image6=0x7f080006;
         public static final int image7=0x7f080007;
+        public static final int imageView1=0x7f080042;
+        public static final int imageView2=0x7f080043;
+        public static final int imageView3=0x7f080044;
+        public static final int imageView4=0x7f080045;
+        public static final int imageView5=0x7f080046;
+        public static final int imageView6=0x7f080047;
         public static final int moneyfield=0x7f08001a;
-        public static final int moneylabel=0x7f08002c;
+        public static final int moneylabel=0x7f08002e;
         public static final int myarr=0x7f080016;
         public static final int nohand=0x7f080023;
         public static final int nowthishand=0x7f080024;
         public static final int players=0x7f080020;
-        public static final int relativeLayout1=0x7f08002e;
+        public static final int relativeLayout1=0x7f080030;
         public static final int relativeLayout2=0x7f080017;
-        public static final int spinnerTarget=0x7f08003c;
-        public static final int split=0x7f08002a;
+        public static final int spinnerTarget=0x7f08003f;
+        public static final int split=0x7f08002c;
         public static final int splitfield=0x7f08001c;
         public static final int splits=0x7f080021;
-        public static final int stand=0x7f080029;
-        public static final int tableLayout1=0x7f08002f;
-        public static final int tableRow1=0x7f080030;
-        public static final int tableRow2=0x7f080034;
-        public static final int tableRow3=0x7f080038;
-        public static final int textView1=0x7f080031;
-        public static final int textView2=0x7f080035;
-        public static final int textView3=0x7f080039;
-        public static final int textView4=0x7f080032;
-        public static final int textView5=0x7f080036;
-        public static final int textView6=0x7f08003a;
-        public static final int textView7=0x7f080033;
-        public static final int textView8=0x7f08003b;
-        public static final int textview=0x7f08003d;
+        public static final int stand=0x7f08002b;
+        public static final int tableLayout1=0x7f080032;
+        public static final int tableRow1=0x7f080033;
+        public static final int tableRow2=0x7f080037;
+        public static final int tableRow3=0x7f08003b;
+        public static final int textView1=0x7f080034;
+        public static final int textView2=0x7f080038;
+        public static final int textView3=0x7f08003c;
+        public static final int textView4=0x7f080035;
+        public static final int textView5=0x7f080039;
+        public static final int textView6=0x7f08003d;
+        public static final int textView7=0x7f080036;
+        public static final int textView8=0x7f08003e;
+        public static final int textview=0x7f080040;
         public static final int thishand=0x7f080025;
         public static final int widget0=0x7f080000;
-        public static final int widget41=0x7f080026;
+        public static final int widget41=0x7f080027;
         public static final int widget412=0x7f080019;
         public static final int widget413=0x7f080018;
         public static final int widget414=0x7f08001e;
         public static final int widget415=0x7f080022;
+        public static final int widget417=0x7f080031;
+        public static final int widget477=0x7f080026;
     }
     public static final class layout {
         public static final int main=0x7f030000;
@@ -170,11 +186,13 @@ public final class R {
         public static final int rela=0x7f030002;
         public static final int spinner=0x7f030003;
         public static final int spinner_item=0x7f030004;
+        public static final int splmain=0x7f030005;
     }
     public static final class string {
         public static final int Deal=0x7f060002;
         public static final int DealersHand=0x7f060006;
         public static final int Double=0x7f060004;
+        public static final int Hint=0x7f06000b;
         public static final int HitMe=0x7f060001;
         public static final int NowThisHand=0x7f060007;
         public static final int Split=0x7f060005;
@@ -182,5 +200,6 @@ public final class R {
         public static final int ThisHand=0x7f060008;
         public static final int app_name=0x7f060000;
         public static final int desc=0x7f060009;
+        public static final int hello=0x7f06000a;
     }
 }

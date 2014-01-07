@@ -10,7 +10,8 @@
     <string name="NowThisHand">Now This Hand</string>
     <string name="ThisHand">This Hand</string>
     <string name="desc">Image View</string>
-    
+    <string name="hello">Shuffling the Deck</string>
+    <string name="Hint">Hint</string>
        
     
     <string-array name="denint">
@@ -31,4 +32,112 @@
         <item>500</item>        
         <item>999</item>
    </string-array>
+   <string-array name="stab">
+       	<item>Always split.</item>
+       	<item>Split on 3 to 7. Otherwise hit.</item>
+		<item>Split on 4 to 7. Otherwise hit.</item>
+		<item>Double on 5 to 6. Otherwise hit.</item>
+		<item>Double on 2 to 9. Otherwise hit.</item>
+		<item>Split on 2 to 6. Otherwise hit.</item>
+		<item>Split on 2 to 7. Stand on 10. Otherwise hit.</item>
+		<item>Always split.</item>
+		<item>Split on 2 to 9 except 7. Stand on 7,10,A.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+   </string-array>
+   <string-array name="atab">
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Always split.</item>
+       	<item>Double on 4 to 6. Otherwise hit.</item>
+		<item>Double on 4 to 6. Otherwise hit.</item>
+		<item>Double on 4 to 6. Otherwise hit.</item>
+		<item>Double on 4 to 6. Otherwise hit.</item>
+		<item>Double on 2 to 6. Otherwise hit.</item>
+		<item>Double on 3 to 6. Stand on 2,7,8,A. Hit on 9,10.</item>
+		<item>Double on 6. Otherwise stand.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+   </string-array>  
+    <string-array name="a3tab">
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Help me</item>
+        <item>Always split.</item>
+       	<item>Hit.</item>
+		<item>Hit.</item>
+		<item>Hit.</item>
+		<item>Hit.</item>
+		<item>Hit.</item>
+		<item>Hit on 3 to 6 9 or 10. Stand on 2,7,8 or A.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+   </string-array>
+   <string-array name="ntab">
+       	<item>Always hit.</item>
+       	<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Double on 5 to 6. Otherwise hit.</item>
+		<item>Double on 2 to 6. Otherwise hit.</item>
+		<item>Double on 2 to 9. Otherwise hit.</item>
+		<item>Always double.</item>
+		<item>Stand on 4 to 6. Otherwise hit.</item>	
+		<item>Stand on 2 to 6. Otherwise hit.</item>
+		<item>Stand on 2 to 6. Otherwise hit.</item>
+		<item>Stand on 2 to 6. Otherwise hit.</item>
+		<item>Stand on 2 to 6. Otherwise hit.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+	</string-array>
+	   <string-array name="n3tab">
+       	<item>Always hit.</item>
+       	<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Always hit..</item>
+		<item>Always hit.</item>
+		<item>Always hit.</item>
+		<item>Stand on 4 to 6. Otherwise hit.</item>	
+		<item>Stand on 2 to 6. Otherwise hit.</item>
+		<item>Stand on 2 to 6. Otherwise hit.</item>
+		<item>Stand on 2 to 6. Otherwise hit.</item>
+		<item>Stand on 2 to 6. Otherwise hit.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+		<item>Always stand.</item>
+	</string-array>
+   
 </resources>

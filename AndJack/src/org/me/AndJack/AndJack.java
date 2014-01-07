@@ -11,11 +11,15 @@ import java.net.URL;
 import java.util.Timer;
 import java.util.TimerTask;
 
+
+
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.KeyEvent;
 import android.view.View;
@@ -36,6 +40,11 @@ import android.graphics.*;
 public class AndJack extends Activity {
         TextView  moneyfield;
 /*        TextView  moneylabel; */
+        String[] splitarray;
+        String[] acearray;
+        String[] ace3array;
+        String[] normalarray;
+        String[] normal3array;
         TextView  thishand;
         TextView  nowthishand;
         TextView  playersscore;
@@ -43,6 +52,8 @@ public class AndJack extends Activity {
         TextView  splitscore;
         TextView  splitfield;
         TextView  dealershand;
+        TextView  hintfield;
+        RelativeLayout denRelative;
         Spinner  Bet;
         Canvas canvas;
         AnimationDrawable AniFrame;
@@ -60,7 +71,7 @@ public class AndJack extends Activity {
         ImageView cardgif[];
         int glWidth;
         int glHeight;
-        int cardDur = 250;
+        int cardDur = 300;
         Integer[] Imgid = {
            R.drawable.c1,  R.drawable.c2,  R.drawable.c3,  R.drawable.c4,  R.drawable.c5,  R.drawable.c6,  R.drawable.c7,  R.drawable.c8,  R.drawable.c9,  R.drawable.c10,
            R.drawable.c11, R.drawable.c12, R.drawable.c13, R.drawable.c14, R.drawable.c15, R.drawable.c16, R.drawable.c17, R.drawable.c18, R.drawable.c19, R.drawable.c20,
@@ -146,28 +157,79 @@ public class AndJack extends Activity {
     		positionCards();
 //    	setContentView(R.layout.main);
     }
-    public void positionCards() {
+    
+    @SuppressWarnings("deprecation")
+	public void positionCards() {
         Display display = ((android.view.WindowManager) getSystemService(WINDOW_SERVICE)).getDefaultDisplay();
         /* Now we can retrieve all display-related infos */
-       int width = display.getWidth();
-       int height = display.getHeight();
+        this.arr = (ImageView) this.findViewById(R.id.myarr);
+        this.arr.setImageResource(R.drawable.back);
+ 
+       int arrwidth = arr.getLayoutParams().width;
+       int arrheight = arr.getLayoutParams().height;
+       DisplayMetrics displaym = this.getResources().getDisplayMetrics();
+
+       int width = displaym.widthPixels;
+       int height = displaym.heightPixels;
        
-       int orientation = display.getOrientation();
+//       int width = display.getWidth();
+       
+//       int height = display.getHeight();
+       int iwidth = 60;
+       int iheight = 90;
+       int dheight = 0;
+//       int orientation = display.getOrientation();
+       int orientation = display.getRotation();
+       int arrxw = width;
+       int arryh = height;
+       LayoutParams arrlayout = new LayoutParams( arryh, arrxw, arrwidth, arrheight);
+       arr.setLayoutParams(arrlayout);
+if (orientation == 0 || orientation == 2 ) {  
+
+	
+//       iwidth = (display.getWidth() / 3) ;
+//	   iheight = (display.getHeight() / 6);
+       iwidth = (width / 3) ;
+   	   iheight = (height / 6);
+   	   dheight = 25;
+   	   
+}
+else   {
+//	   iwidth = (display.getWidth() / 6) ;
+//	   iheight = (display.getHeight() / 3);
+   	   iwidth = (width / 6) ;
+   	   iheight = (height / 3);
+   	   dheight = 12;
+}
+   	   
+//       int orientation = display.getOrientation();
 //       width = glWidth;
        for (int i = 0; i < dimage.length; i++){
-        	int xd = (((width / 3) - (dimage[0].getWidth())) / 3);
-         	int yd = 66 + (i * 20);
-         LayoutParams	 layoutdParams = new LayoutParams(-2,-2, xd, yd);
+ //       	iwidth = ((display.getWidth() / 3) - 30);
+        	int xd = (((width / 3) - (iwidth)) / 3);
+         	int yd = 100 + (i * (height / 25));
+         	yd = denRelative.getLayoutParams().height + 10 + (i * (height / dheight));
+//         	iwidth = ((display.getWidth() / 3) - (xd - 50));
+//            LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(iwidth,iheight);
+            LayoutParams	 layoutdParams = new LayoutParams(iheight, iwidth, xd, yd);
+//            LayoutParams	 layoutdParams = new LayoutParams(-2,-2, xd, yd);
+//          dimage[i].= ((display.getWidth() / 3) - xd);
           dimage[i].setLayoutParams(layoutdParams);
-        	int xp = (((width / 3) - (dimage[0].getWidth())) / 3) + (width / 3);
-         	int yp = 66 + (i * 20);
-         LayoutParams	 layoutpParams = new LayoutParams(-2,-2, xp, yp);
+//          dimage[i].setLayoutParams(parms);
+        	int xp = (((width / 3) - (iwidth)) / 3) + (width / 3);
+         	int yp = 100 + (i * (height / 25));
+         	yp = denRelative.getLayoutParams().height + 10 + (i * (height / dheight));
+//            LayoutParams	 layoutpParams = new LayoutParams(-2,-2, xp, yp);
+            LayoutParams	 layoutpParams = new LayoutParams(iheight, iwidth, xp, yp);
           pimage[i].setLayoutParams(layoutpParams);
-        	int xs = (((width / 3) - (dimage[0].getWidth())) / 3) + ((width / 3)*2);
-         	int ys = 66 + (i * 20);
-         LayoutParams	 layoutsParams = new LayoutParams(-2,-2, xs, ys);
+ //         pimage[i].setLayoutParams(parms);
+        	int xs = (((width / 3) - (iwidth)) / 3) + ((width / 3)*2);
+         	int ys = 100 + (i * (height / 25));
+         	ys = denRelative.getLayoutParams().height + 10 + (i * (height / dheight));
+            LayoutParams	 layoutsParams = new LayoutParams(iheight, iwidth, xs, ys);
+ //           LayoutParams	 layoutsParams = new LayoutParams(-2,-2, xs, ys);
           simage[i].setLayoutParams(layoutsParams);
-            
+//          simage[i].setLayoutParams(parms);  
        }
 /*this.moneylabel.setText("width = "+ width); */
     }
@@ -215,12 +277,15 @@ public class AndJack extends Activity {
         splitscore = (TextView) this.findViewById(R.id.splits);
         splitfield = (TextView ) this.findViewById(R.id.splitfield);
         dble = (Button) this.findViewById(R.id.dble);
+        hintfield = (TextView) this.findViewById(R.id.hintfield);
         hit = (Button) this.findViewById(R.id.hit);
         stand = (Button) this.findViewById(R.id.stand);
         split = (Button) this.findViewById(R.id.split);
         deal = (Button) this.findViewById(R.id.deal);
+//        stab = (Array) this.findViewById(R.array.stab);
         denimage = (ImageView) this.findViewById(R.id.image1);
         dealershand = (TextView) this.findViewById(R.id.dealershand);
+        denRelative = (RelativeLayout) this.findViewById(R.id.relativeLayout2);
         this.Bet = (Spinner) this.findViewById(R.id.Bet);
       ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
              this, R.array.denint, R.layout.spinner);
@@ -255,7 +320,14 @@ public class AndJack extends Activity {
         simage[4]= (ImageView) this.findViewById(R.id.image25);
         simage[5]= (ImageView) this.findViewById(R.id.image26);
         simage[6]= (ImageView) this.findViewById(R.id.image27);
+        splitarray = getResources().getStringArray(R.array.stab);
+        acearray = getResources().getStringArray(R.array.atab);
+        normalarray = getResources().getStringArray(R.array.ntab);
+        normal3array = getResources().getStringArray(R.array.n3tab);
+        ace3array =  getResources().getStringArray(R.array.a3tab);
+        hintfield.setText("");
         positionCards();
+
         this.arr = (ImageView) this.findViewById(R.id.myarr);
         this.arr.setImageResource(R.drawable.back);
         arr.setVisibility(View.INVISIBLE);
@@ -402,7 +474,7 @@ public class AndJack extends Activity {
 
                }
                  hand1=true;}
-
+            hintfield.setText("");
            moneyfield.setText("$" + money);
 //            repaint();
               paint (canvas);
@@ -418,6 +490,7 @@ public class AndJack extends Activity {
                  rdealacard(pimage[playersHand.numberofCards-1],arr,0);
                  playouthand (Integer.parseInt(Bet.getItemAtPosition(Bet.getSelectedItemPosition()).toString()) * 2,playersHand);
           moneyfield.setText("$" + money);
+          hintfield.setText("");
    //         repaint();
               paint (canvas);
             }});
@@ -448,8 +521,8 @@ public class AndJack extends Activity {
         //         repaint();
         //         validate();
 
-
-           moneyfield.setText("$" + money);
+                 hintfield.setText("");
+                 moneyfield.setText("$" + money);
        //     repaint();
             paint (canvas);
             }});
@@ -496,6 +569,17 @@ public class AndJack extends Activity {
                             thishand.setVisibility(View.VISIBLE);
                             thishand.setText("");
                     			}
+                    else{
+                    if(splitHand.notsofthand())
+                    {
+                    	hintfield.setText(normalarray[(splitHand.currentScore() - 1)].toString() );
+                    }
+                    else
+                    {
+                    	hintfield.setText(ace3array[(splitHand.currentScore() - 1)].toString() );
+                    }
+                      }
+
                     splitHand.showsplithand(splitscore); }
 
            moneyfield.setText("$" + money);
@@ -505,6 +589,27 @@ public class AndJack extends Activity {
         playersscore.setVisibility(View.VISIBLE);
         dealersscore.setVisibility(View.VISIBLE);
         splitscore.setVisibility(View.VISIBLE);
+        if (playersHand.handbusted()){
+        	hintfield.setText("");
+        }else
+        {
+          if(playersHand.notsofthand()) 
+           {
+              if (playersHand.numberofCards < 3)
+                   	hintfield.setText(normalarray[(playersHand.currentScore() - 1)].toString() );
+              else
+                 	hintfield.setText(normal3array[(playersHand.currentScore() - 1)].toString() ); 
+           }
+        else
+           {
+              if (playersHand.numberofCards < 3)
+           	          hintfield.setText(acearray[(playersHand.currentScore() - 1)].toString() );
+              else
+       	              hintfield.setText(ace3array[(playersHand.currentScore() - 1)].toString() );	  
+           }
+
+        }
+        
         dble.setEnabled(false);
 
             paint (canvas);
@@ -557,6 +662,9 @@ if (reallyShuffled) {
        //  g.drawText("Shuffling the Deck",70,105,null);
          for (int ii = 0;ii<10;ii++){
           for (int i=0;i<5;i++){
+
+   //    	   rdealacard (dimage[0],arr,cardDur);
+ //       	  raniShuffle (dimage[0],pimage[0],0);
  //           try {
  //               Thread.currentThread().sleep(100);}
  //             catch ( java.lang.InterruptedException e) {
@@ -782,6 +890,49 @@ void checkforshuffle( )
 //           repaint();
 //           validate();
 //                     }
+//           for (int ii = 0;ii<10;ii++){
+//               for (int i=0;i<5;i++){
+//           dimage[0].setImageBitmap(BitmapFactory.decodeResource(getResources(), Imgid[52]));
+//           pimage[0].setImageBitmap(BitmapFactory.decodeResource(getResources(), Imgid[52]));
+//           Animation animation = new TranslateAnimation(0, 500,0, 0); 
+//           animation.setDuration(1000); 
+//           animation.setFillAfter(true); 
+//           dimage[0].startAnimation(animation); 
+/*           dimage[0].setVisibility(View.VISIBLE);
+           pimage[0].setVisibility(View.VISIBLE);
+           
+           ImageView leftImage = dimage[0]; 
+
+           ImageView rightImage =  pimage[0];  
+
+           
+
+          TranslateAnimation leftAnim = new TranslateAnimation(0f, -50f, 0f, 0f);  
+
+          leftAnim.setDuration(1000);  
+          leftAnim.setRepeatCount(TranslateAnimation.INFINITE);  
+
+          leftImage.startAnimation(leftAnim);  
+
+                     
+
+          TranslateAnimation rightAnim = new TranslateAnimation(0f, 50f, 0f, 0f);  
+
+          rightAnim.setRepeatCount(TranslateAnimation.INFINITE);  
+
+          rightAnim.setDuration(1000);  
+
+          rightImage.startAnimation(rightAnim); 
+//           raniShuffle    (pimage[0],arr,cardDur);
+ //                  paint (canvas);
+//               }
+ //              }
+  
+  */
+//          startActivity(new Intent("org.me.AndJack.AndSplash"));
+          Intent intentFont = new Intent(this, AndSplash.class);
+          startActivityForResult(intentFont,555);
+
            initialDeal();
 
            }
@@ -847,8 +998,58 @@ void initialDeal() {
         }
 
 }
+
+void raniShuffle (ImageView dcard, ImageView pcard, int startOffset){
+    int[] dealLocation = { 0, 0 };
+    int[] playLocation = { 0, 0 };
+    dcard.setVisibility(View.VISIBLE);
+    pcard.setVisibility(View.VISIBLE);
+
+    dcard.getLocationInWindow(dealLocation);
+    pcard.getLocationInWindow(playLocation);
+    dcard.setImageBitmap(BitmapFactory.decodeResource(getResources(), Imgid[52]));
+    pcard.setImageBitmap(BitmapFactory.decodeResource(getResources(), Imgid[52]));
+     
+    //dcard.setImageResource(Imgid[52]);
+    //pcard.setImageResource(Imgid[52]);
+    dcard.setVisibility(View.VISIBLE);
+    pcard.setVisibility(View.VISIBLE);
+    TranslateAnimation shufCardAnim = new TranslateAnimation(
+            Animation.ABSOLUTE, dealLocation[0],
+            Animation.ABSOLUTE, playLocation[0],
+            Animation.ABSOLUTE, dealLocation[1],
+            Animation.ABSOLUTE, playLocation[1]);
+    shufCardAnim.setDuration(cardDur);
+    shufCardAnim.setStartOffset(startOffset + 1);
+    TranslateAnimation shufpCardAnim = new TranslateAnimation(
+            Animation.ABSOLUTE, playLocation[0],
+            Animation.ABSOLUTE, dealLocation[0],
+            Animation.ABSOLUTE, playLocation[1],
+            Animation.ABSOLUTE, dealLocation[1]);
+    shufpCardAnim.setDuration(cardDur);
+    shufpCardAnim.setStartOffset(startOffset + 1);
+    pcard.startAnimation(shufpCardAnim);
+    final Handler handler = new Handler(); 
+    Timer t = new Timer(); 
+    t.schedule(new TimerTask() { 
+            public void run() { 
+                    handler.post(new Runnable() { 
+                            public void run() { 
+                             int x = 1;
+//
+                             x = x + 1;
+                             x = x - 1;
+                            } 
+                            // }
+                    }); 
+            } 
+    }, cardDur * 2); 
+
+}
+
 void rdealacard (ImageView incard, ImageView arr,int startOffset) {
 
+	final ImageView dencard;
 
  /* final  Thread promoThread = new Thread() {
         
@@ -858,9 +1059,13 @@ void rdealacard (ImageView incard, ImageView arr,int startOffset) {
             try {
 */
 //  	 int startOffset = 0;
+	dencard=incard;
      int[] arrLocation = { 0, 0 };
+//     LayoutParams params;
+//     arr.setLayoutParams(params);
   //   arr = (ImageView) this.findViewById(R.drawable.back);
     // arr.setVisibility(View.VISIBLE);
+     
      arr.getLocationInWindow(arrLocation);
 //     int[] dealLocation = { 0, 0 };
 //     this.dimage[0].getLocationInWindow(dealLocation);
@@ -881,9 +1086,19 @@ void rdealacard (ImageView incard, ImageView arr,int startOffset) {
   //   arr.startAnimation(dealCardAnim);
   //   arr.startAnimation(dealCardAnim);
       
-      incard.startAnimation(dealCardAnim);
+      dencard.startAnimation(dealCardAnim);
+      dencard.postDelayed(new Runnable() {
+    	  @Override
+    	  public void run () {
+
+   //		  dencard.setVisibility(View.GONE);
+    	  }
+      },cardDur  );
+      
+    	
+      
  //     incard.postInvalidate();
-      final Handler handler = new Handler(); 
+ /* denny    final Handler handler = new Handler(); 
       Timer t = new Timer(); 
       t.schedule(new TimerTask() { 
               public void run() { 
@@ -897,7 +1112,7 @@ void rdealacard (ImageView incard, ImageView arr,int startOffset) {
                               // }
                       }); 
               } 
-      }, cardDur); 
+      }, cardDur * 2); denny */
       
 //      dimage[i].startAnimation(dealCardAnim);
  /*    while (!dealCardAnim.hasEnded())
@@ -977,17 +1192,25 @@ void RestOfInitDeal () {
             stand.setEnabled(true);
             dble.setEnabled(false);
             split.setEnabled(false);
+            hintfield.setText(normalarray[(playersHand.currentScore() - 1)].toString() );
+
 //            if (playersHand.currentScore() == 10 || playersHand.currentScore() == 11)
             if (playersHand.currentScore() < 12 || (playersHand.Cards[0].cardvalue == 1 ||
                                                     playersHand.Cards[1].cardvalue == 1))
                 {
                 dble.setEnabled(true);
+                if(playersHand.Cards[0].cardvalue == 1 || playersHand.Cards[1].cardvalue == 1){
+                 hintfield.setText(acearray[(playersHand.currentScore())].toString() );	
                 }
-            if (playersHand.Cards[0].cardalpha.toString() == playersHand.Cards[1].cardalpha.toString())
+                
+                }
+            if (playersHand.Cards[0].cardalpha.contentEquals(playersHand.Cards[1].cardalpha.toString()))
             {
                 split.setEnabled(true);
+                hintfield.setText(splitarray[(playersHand.Cards[0].cardvalue - 1)].toString() );
             }
             }
+    
 
     }
     private boolean reallyShuffled = false;
@@ -1037,6 +1260,7 @@ class Deck {
             cards[tmpcard2] = holdcard;
         }
         shuffled = true;
+        
     }
     int randomCard(){
         return ((int) (Math.random() * cardsindeck));
@@ -1125,6 +1349,32 @@ class Deck {
             }
             return handvalue;
         }
+        boolean notsofthand(){
+        	int handvalue = 0;
+        	boolean denbool=false;
+        	boolean denten=false;
+            boolean arethereAces = false;
+            for (int i=0;i<numberofCards;i++) {
+                handvalue += Cards[i].cardvalue;
+            	if (Cards[i].cardvalue == 1) arethereAces = true;
+                if (Cards[i].cardvalue == 10) denten = true;
+                 }
+            if (denten==true) denbool=true;
+            if (arethereAces) {
+            	 if (handvalue + 10 < 22) {
+            		 denbool=false;
+            		 }
+            	 else
+            		 {denbool=true;
+            	     }
+                                         }
+            else
+            {
+            denbool=true;	
+            }
+            return denbool;
+        }
+        
         boolean mustHit(){
             if (currentScore() < 17)
                 return true;
