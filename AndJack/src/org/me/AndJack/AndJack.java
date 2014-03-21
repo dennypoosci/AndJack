@@ -586,9 +586,9 @@ else   {
 //            repaint();
 //        thishand.setVisibility(View.VISIBLE);
 //        nowthishand.setVisibility(View.VISIBLE);
-        playersscore.setVisibility(View.VISIBLE);
-        dealersscore.setVisibility(View.VISIBLE);
-        splitscore.setVisibility(View.VISIBLE);
+///        playersscore.setVisibility(View.VISIBLE);
+///        dealersscore.setVisibility(View.VISIBLE);
+///        splitscore.setVisibility(View.VISIBLE);
         if (playersHand.handbusted()){
         	hintfield.setText("");
         }else
@@ -619,9 +619,9 @@ else   {
   //      moneylabel.setVisibility(1);
   //      thishand.setVisibility(View.VISIBLE);
   //      nowthishand.setVisibility(View.VISIBLE);
-        playersscore.setVisibility(View.VISIBLE);
-        dealersscore.setVisibility(View.VISIBLE);
-        splitscore.setVisibility(View.VISIBLE);
+///        playersscore.setVisibility(View.VISIBLE);
+///        dealersscore.setVisibility(View.VISIBLE);
+///        splitscore.setVisibility(View.VISIBLE);
         dble.setEnabled(false);
         paint (canvas);
                 
@@ -1059,14 +1059,20 @@ void rdealacard (ImageView incard, ImageView arr,int startOffset) {
             try {
 */
 //  	 int startOffset = 0;
+    playersscore.setVisibility(View.INVISIBLE);
+    dealersscore.setVisibility(View.INVISIBLE);
+    splitscore.setVisibility(View.INVISIBLE);
+
 	dencard=incard;
      int[] arrLocation = { 0, 0 };
 //     LayoutParams params;
 //     arr.setLayoutParams(params);
   //   arr = (ImageView) this.findViewById(R.drawable.back);
     // arr.setVisibility(View.VISIBLE);
-     
+  
      arr.getLocationInWindow(arrLocation);
+     arrLocation[0]=2000;
+     arrLocation[1]=2000;
 //     int[] dealLocation = { 0, 0 };
 //     this.dimage[0].getLocationInWindow(dealLocation);
      int[] playLocation = { 0, 0 };
@@ -1090,10 +1096,12 @@ void rdealacard (ImageView incard, ImageView arr,int startOffset) {
       dencard.postDelayed(new Runnable() {
     	  @Override
     	  public void run () {
-
+              playersscore.setVisibility(View.VISIBLE);
+              dealersscore.setVisibility(View.VISIBLE);
+              splitscore.setVisibility(View.VISIBLE);
    //		  dencard.setVisibility(View.GONE);
     	  }
-      },cardDur  );
+      },cardDur * 4  );
       
     	
       
